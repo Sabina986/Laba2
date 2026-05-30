@@ -64,10 +64,6 @@ public final class Sort extends ArrayPI {
                             }
                         }
                     }
-                    for (int i = 0; i <35; i++){
-                        System.out.print(sor1[i] + " " + sor2[i] + "\n");
-                    }
-
                     String updateSQL = "UPDATE " + tbName + " SET Mass2 = ?, Mass3 = ? WHERE Mass = ?";
                     try (PreparedStatement psUpdate = connection.prepareStatement(updateSQL)) {
                         String StrAll = "", StrSum = "";
